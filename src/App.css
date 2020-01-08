@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?jb7aw");
+  src: url("fonts/icomoon.eot?jb7aw#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?jb7aw") format("truetype"),
+    url("fonts/icomoon.woff?jb7aw") format("woff"),
+    url("fonts/icomoon.svg?jb7aw#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}
+
+/*task css start*/
+
+.main-box {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  margin: 80px auto;
+}
+
+.left-selected {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  border: 1px solid #6a6a6a;
+  overflow: auto;
+}
+
+.main-box li {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 60px;
+  border-bottom: dashed 1px #c8c8c8;
+}
+
+.middle-convert {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-convert button {
+  width: 32px;
+  height: 32px;
+  margin: 12px;
+  padding: 0;
+  text-align: center;
+}
+
+.middle-convert button i {
+  font-size: 24px;
+}
+
+.right-selected {
+  flex: 4;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #6a6a6a;
+  overflow: auto;
+}
+
+.main-box li label {
+  padding: 4px;
+}
+
+.main-box li label::before {
+  width: 0 !important;
+}
+
+.main-box li:hover {
+  background-color: #1174e6;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.active {
+  background-color: #1174e6;
+  color: #fff;
+  font-weight: 800;
+}
+
+.light input[type="checkbox"] {
+  margin: 7px -1px 0px 5px;
+}
